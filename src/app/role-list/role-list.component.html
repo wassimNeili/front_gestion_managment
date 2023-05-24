@@ -1,0 +1,27 @@
+<h2>Role List</h2>
+
+<button class="add-button" >Add Role</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Salary</th>
+      
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let role of roles">
+      <td>{{ role.id }}</td>
+      <td>{{ role.name }}</td>
+      <td>{{ role.salaire }}</td>
+      
+      <td>
+        <button class="update-button" >Update</button>
+        <button class="delete-button" >Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
